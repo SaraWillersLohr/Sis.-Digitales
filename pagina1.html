@@ -1,13 +1,62 @@
 <html>
 <head>
-<title>Formulario de entrada del dato</title>
+    <title>TP9 SWL</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form method="post" action="pagina2.php">
-Ingrese su nombre:
-<input type="text" name="nombre">
+   
+    <form action="pagina2.php" method="post">
+        <header>
+            <h1>Formulario de Inscripcion</h1>
+        </header>
+        Ingrese su nombre:
+        
+        <input type="text" name="nombre" required>
+        <br>
+        Ingrese su apellido:
+        <input type="text" name="apellido" required>
+        <br>
+        Ingrese su edad:
+        <input type="number" name="edad"required>
+        <br>
+        DNI: 
+        <input type="text" name="DNI"required>
+        <br>
+        Fecha de nacimiento: 
+        <input type="date" name="fecha" id="" required>
+        <br>
+        <div class="gender">
+        Genero: 
+        <input type="radio" name="gender" id="Femenino">Femenino
+        <input type="radio" name="gender" id="Masculino">Masculino
+        </div>
+        <br>
+        <div>
+            <label for="dropdown">Ciudad de nacimiento: </label>
+            <select id="dropdown" name="ciudad_nacimiento" required>
+                <option>Buenos Aires</option>
+                <option>Mar del Plata</option>
+                <option>Rosario</option>
+                <option>Córdoba</option>
+                <option>Rawson</option>
+                <option>Posadas</option>
+                <option>Mendoza</option>
+                <option>Bahía Blanca</option>
+            </select>
+</div>
+<div>
+    Direccion: 
+    <input type="text" name="dire" id="">
+
+</div>
 <br>
-<input type="submit" value="confirmar">
-</form>
+<label for="intereses">Hobbies:</label>
+<textarea id="intereses" name="hobbies"required></textarea>
+
+Comentarios: 
+<input type="text" name="comment"required>
+
+<input type="submit" value="enviar">
+    </form>
 </body>
 </html>
