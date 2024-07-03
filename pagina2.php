@@ -1,38 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Respuestas</title>
-    <link rel="stylesheet" href="style.css">
+<title>Problema</title>
 </head>
 <body>
-<div class="container">
-    <h1>Info del usuario:</h1>
 <?php
-$nombre = $_POST['nombre'];
+$ar = fopen("datos.txt", "a") or
+die("Problemas en la creacion");
+fputs($ar, $_REQUEST['nombre']);
+fputs($ar, "\n");
+fputs($ar, $_REQUEST['comentarios']);
+fputs($ar, "\n");
+fputs($ar, "--------------------------------------------------------");
+fputs($ar, "\n");
+fclose($ar);
+echo "Los datos se cargaron correctamente.";
 
-$apellido =$_POST['apellido'];
-
-$edad = $_POST['edad'];
-
-$dni = $_POST['DNI'];
-
-$fecha = $_POST['fecha'];
-
-$gender =$_POST['gender'];
-
-$ciudad =$_POST['ciudad_nacimiento'];
-
-$direc = $_POST['dire'];
-
-$hobbies = $_POST['hobb'];
-
-$comment = $_POST['comment'];
-echo " Tu nombre es $nombre $apellido, y tienes $edad años. 
-Tu dni es $dni , y naciste el $fecha en $ciudad.
-Tu género es $gender, vives en $direc, y tus intereses son: $hobbies. ¡Gracias por inscribirte!"
+    "Se declara la variable ar y se utiliza el comando fopen pra abrir o crear un archivo de texto.
+    Si no se puede crear, en pantalla se mostrará el mensaje Problemas en la creación.
+    A continuación, se accede a los datos ingresados en la pagina1.php y se las guarda en este archivo de texto.
+    Se muestran esos datos, se hace una linea divisora entre estos y el mensaje final. Se cierra el archivo de texto. 
+    Para finalizar se muestra el mensaje Se cargaron los datos correctamente. "
 ?>
-</div>
+
 </body>
 </html>
