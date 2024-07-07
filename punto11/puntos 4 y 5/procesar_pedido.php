@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $file = fopen("pedidos.txt", "a") or die("Problemas, por favor intente nuevamente");
 
     fputs($file, $_REQUEST['nombre'] . "\n");
@@ -28,5 +28,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fclose($file);
 
     echo "Los datos se cargaron correctamente.";
-}
+
 ?>
