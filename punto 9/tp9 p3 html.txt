@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Problema</title>
+</head>
+<body>
+    <form action="pagina2.php" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre">
+        <br>
+        Seleccione los deportes que practica:
+        <br>
+        <input type="checkbox" name="futbol">futbol
+        <br>
+        <input type="checkbox" name="basquet" >basquet
+        <br>
+        <input type="checkbox" name="tennis">tennis
+        <br>
+        <input type="checkbox" name="voley" >voley
+        <br>
+        <input type="checkbox" name="padel" >padel
+        <br>
+        <br>
+        <input type="submit" name="operar">
+    </form>
+</body>
+</html>

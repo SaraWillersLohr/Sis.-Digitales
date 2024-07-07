@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Captura de datos del form</title>
+</head>
+<body>
+<?php
+echo "El nombre es  ";
+echo $_REQUEST['nombre']."<br>";
+
+echo "La edad es  ";
+echo $_REQUEST['edad']."<br>";
+
+if(($_REQUEST['edad']) < 18){
+  echo  $_REQUEST['nombre']; 
+echo " es menor de edad"."<br>";
+}
+else{
+   echo $_REQUEST['nombre'];
+    echo " es mayor de edad"."<br>";  
+}
+?>
+</body>
+</html>

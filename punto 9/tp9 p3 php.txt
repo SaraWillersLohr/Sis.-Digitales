@@ -1,0 +1,12 @@
+<?php
+$c=0;
+
+$c+=(isset($_REQUEST['futbol']));
+$c+=(isset($_REQUEST['voley']));
+$c+=(isset($_REQUEST['tennis']));
+$c+=(isset($_REQUEST['basquet']));
+$c+=(isset($_REQUEST['padel']));
+
+echo $_REQUEST['nombre'];
+echo " hace ". $c ." deporte/es. ";
+?>
