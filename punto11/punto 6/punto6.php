@@ -7,11 +7,11 @@ function claves($clave1, $clave2) {
     }
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $username = $_REQUEST['username'];
     $password1 = $_REQUEST['password1'];
     $password2 = $_REQUEST['password2'];
 
     claves($password1, $password2);
-}
+
 ?>
