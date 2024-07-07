@@ -1,0 +1,8 @@
+Apellido: Willers
+Nombre: Sara
+DNI: 40000000
+Fecha de Nacimiento: 2008-06-23
+Curso: 5to
+Cantidad de materias adeudadas: 0
+Materia: informatica 
+Fecha de Inscripcion: 2024-07-07

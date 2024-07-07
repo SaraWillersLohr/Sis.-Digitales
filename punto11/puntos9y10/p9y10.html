@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inscripción a Mesas de Examen</title>
+</head>
+<body>
+    <h1>Formulario de Inscripción a Mesas de Examen</h1>
+    <form action="p9y10.php" method="post">
+        <label for="nombre">Apellido: </label>
+        <input type="text" name="apellido" required><br>
+        
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" required><br>
+
+        <label for="dni">DNI:</label>
+        <input type="number" name="dni" min="10000000" max="50000000" required><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" name="fecha" required><br>
+
+        <label for="curso_actual">Curso Actual:</label>
+        <input type="text" name="curso" required><br>
+
+        <label for="materias_adeudadas">Cantidad de Materias Adeudadas:</label>
+        <input type="number" name="adeudadas" required><br>
+
+        <label for="materia_inscripcion">Materia en la que se inscribe (Materia y Curso):</label>
+        <input type="text" name="materia" required><br>
+
+        <label for="fecha_inscripcion">Fecha de Inscripción:</label>
+        <input type="date" name="finscripcion" required>
+        <br>
+        <br>
+        <input type="submit" value="Confirmar Inscripción">
+    </form>
+</body>
+</html>
